@@ -3,12 +3,17 @@ namespace MascotaFeliz.App.Dominio
 {
     public class VisitaDomiciliaria
     {
-        public string Placa {get;set;}
-        public string TipoVehiculo {get;set;}
-        public string Marca {get;set;}
-        public string Modelo {get;set;}
-        public string color {get;set;}
-        public Puesto ubicacion {get:set:}
+        public DateTime FechaHoraVisita {get;set;}
+        public int Id {get;set;}
+        public int Temperatura {get;set;}
+        public float Peso {get;set;}
+        public int FrencuenciaCardiaca {get;set;}
+        public int FrencuenciaRespiratoria {get;set;}
+        public string EstadoAnimo {get;set;}
+        public List<string> Medicinas {get;set;}
+        public string Remision {get;set;}
+        public Veterinario Encargado {get:set:}
+        public Mascota Paciente {get:set:}
 
     }
 }
