@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "MezOLCWWBq9loQgWssWAjqfE54RjhBs+fR5pH7nSynd7j8s6/5D62T2KmYGvKlrMxIC2zxVjgQpMieHIbkKtrg==",
+  "success": true,
+  "projectFilePath": "C:\\CasoUsoMinticCiclo3\\Parking.App\\Parking.App.Servicios\\Parking.App.Servicios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nicki\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\nicki\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\nicki\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\nicki\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\nicki\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\nicki\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
