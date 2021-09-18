@@ -7,7 +7,7 @@
 
 • Olga Lucía Díaz Fernández C.C: 52560732
 
-• William Alberto Álvarez Campos C.C: 91467483
+• William Alberto Alvarez Campos C.C: 91467483
 
 • Leidy Amparo López Arboleda C.C: 43.977.781
 
