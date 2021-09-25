@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <style>
+        input,label{display:block}
+    </style>
+    <h1>Mi Primer Formulario</h1>
+    <form action="">
+ 
+        <h1>--------------------</h1>
+        <H1>MASCOTA FELIZ</H1>
+        <h2>Visita Domiciliaria</h2>
+        <p>Ingresa tus datos para poder asignar la cita a tu mascota.</p>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="" id="nombre">
+        <label for="edad">Identificacion</label>
+        <input type="number" name="" id="edad">
+        <label for="clave">Clave</label>
+        <input type="password"  id="clave">
+        <input type="submit" value="enviar formulario" >
+        <input type="reset" value="Ressetear el formulario">
+        <h1>--------------</h1>
+        <img src="mascotaFeliz.jfif" alt="">
+    </form>
+    <table>
+        <colgroup>
+            <col style="background-color: grey;">
+            <col style="background-color: grey;">
+            <col style="background-color:grey;">
+        </colgroup>
+        <caption><b>VISITA Domiciliaria</b></caption>
+        <caption>podemos colocar en este sitio el veterinario asignado</caption>
+        <thead>
+            <tr>
+                <td>Mascota</td>
+                <td>veterinario</td>
+                <td>estado de salud</td>
+            </tr>
+        </thead>
+        <tr>
+            <td>michi</td>
+            <td>raul hernandez</td>
+            <td>Estado de salud buena,estable</td>
+            
+        </tr>
+        <tr>
+            <td>celda 4</td>
+            <td>celda 5</td>
+            <td>celda 6</td>
+            
+        </tr>
+        <tr>
+            <td>celda 7</td>
+            <td>celda 8</td>
+            <td>celda 9</td>
+            
+        </tr>
+    </table>
+</body>
+</html>
