@@ -1,7 +1,7 @@
 using MascotaFeliz.App.Dominio;
 using System.Collections.Generic;
 
-namespace MascotaFeliz.App.Persistencia
+namespace MascotaFeliz.App.Persistencia.AppRepositories
 
 {
     public interface iRepositorioVisitaDomiciliaria{
