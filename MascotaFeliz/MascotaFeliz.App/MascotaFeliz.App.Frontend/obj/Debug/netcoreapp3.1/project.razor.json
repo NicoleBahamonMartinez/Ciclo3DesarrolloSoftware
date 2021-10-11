@@ -14402,6 +14402,16 @@
   "RootNamespace": "MascotaFeliz.App.Frontend",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\VisitasDomiciliarias\\Edit.cshtml",
+      "TargetPath": "Pages\\VisitasDomiciliarias\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\Dueños\\Edit.cshtml",
+      "TargetPath": "Pages\\Dueños\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
@@ -14417,8 +14427,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\Dueños\\List.cshtml",
+      "TargetPath": "Pages\\Dueños\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\VisitasDomiciliarias\\Details.cshtml",
+      "TargetPath": "Pages\\VisitasDomiciliarias\\Details.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,0 +1,25 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.EditModel
+@{
+}
+<h2>Edición de la Visita Domiciliaria realizada el @Model.visitaDomiciliaria.FechaHoraVisita</h2>
+<form method="post">
+    <input type="hidden" asp-for="visitaDomiciliaria.Id" />
+    <div class="form-group">
+        <label asp-for="visitaDomiciliaria.EstadoAnimo"></label>
+        <input asp-for="visitaDomiciliaria.EstadoAnimo" class="form-control">
+        <span class="text-danger" asp-validation-for="visitaDomiciliaria.EstadoAnimo"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="visitaDomiciliaria.Medicinas"></label>
+        <input asp-for="visitaDomiciliaria.Medicinas" class="form-control">
+        <span class="text-danger" asp-validation-for="visitaDomiciliaria.Medicinas"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="visitaDomiciliaria.Remision"></label>
+        <input asp-for="visitaDomiciliaria.Remision" class="form-control">
+        <span class="text-danger" asp-validation-for="visitaDomiciliaria.Remision"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+<a asp-page="./List" class="btn-default">Lista de Visitas Domiciliarias </a>

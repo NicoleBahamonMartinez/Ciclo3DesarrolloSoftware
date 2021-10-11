@@ -1,0 +1,37 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.DetailsModel
+@{
+}
+<h2>@Model.vd.FechaHoraVisita</h2>
+<div>
+    Id: @Model.vd.Id
+</div>
+<div>
+    Temperatura: @Model.vd.Temperatura
+</div>
+<div>
+    Peso: @Model.vd.Peso
+</div>
+<div>
+    Frencuencia Cardiaca: @Model.vd.FrencuenciaCardiaca
+</div>
+<div>
+    Frencuencia Respiratoria: @Model.vd.FrencuenciaRespiratoria
+</div>
+<div>
+    EstadoAnimo: @Model.vd.EstadoAnimo
+</div>
+<div>
+    Medicinas: @Model.vd.Medicinas
+</div>
+<div>
+    Remision: @Model.vd.Remision
+</div>
+<div>
+    Veterinario Encargado(Código): @Model.vd.Encargado.CodigoProfesional
+</div>
+<div>
+    Nombre Mascota: @Model.vd.Paciente.Nombre
+</div>
+
+<a asp-page="./List" class="btn-default">Lista de Visitas Domiciliarias </a>

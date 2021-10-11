@@ -10,6 +10,7 @@ namespace MascotaFeliz.App.Persistencia.AppRepositories
         VisitaDomiciliaria UpdateVisitaDomiciliaria(VisitaDomiciliaria pVisitaDomiciliaria); 
         void DeleteVisitaDomiciliaria(int pId);
         VisitaDomiciliaria GetVisitaDomiciliaria(int pId);
+        IEnumerable<VisitaDomiciliaria> GetVisitasDomiciliariaPorFiltro(string filtro);
         
     }
 }

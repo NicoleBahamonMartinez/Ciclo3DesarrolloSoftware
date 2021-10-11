@@ -80,3 +80,7 @@ C:\Users\nicki\Desktop\MISIONTIC\Ciclo 3\Desarrollo de Software\Ciclo3Desarrollo
 C:\Users\nicki\Desktop\MISIONTIC\Ciclo 3\Desarrollo de Software\Ciclo3DesarrolloSoftware\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\MascotaFeliz.App.Persistencia.dll
 C:\Users\nicki\Desktop\MISIONTIC\Ciclo 3\Desarrollo de Software\Ciclo3DesarrolloSoftware\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\MascotaFeliz.App.Persistencia.pdb
 C:\Users\nicki\Desktop\MISIONTIC\Ciclo 3\Desarrollo de Software\Ciclo3DesarrolloSoftware\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Frontend\bin\Debug\netcoreapp3.1\MascotaFeliz.App.Dominio.pdb
+C:\Users\nicki\Desktop\MISIONTIC\Ciclo 3\Desarrollo de Software\Ciclo3DesarrolloSoftware\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Dueños\List.cshtml.g.cs
+C:\Users\nicki\Desktop\MISIONTIC\Ciclo 3\Desarrollo de Software\Ciclo3DesarrolloSoftware\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Dueños\Edit.cshtml.g.cs
+C:\Users\nicki\Desktop\MISIONTIC\Ciclo 3\Desarrollo de Software\Ciclo3DesarrolloSoftware\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\VisitasDomiciliarias\Details.cshtml.g.cs
+C:\Users\nicki\Desktop\MISIONTIC\Ciclo 3\Desarrollo de Software\Ciclo3DesarrolloSoftware\MascotaFeliz\MascotaFeliz.App\MascotaFeliz.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\VisitasDomiciliarias\Edit.cshtml.g.cs
