@@ -14412,6 +14412,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\VisitasDomiciliarias\\Delete.cshtml",
+      "TargetPath": "Pages\\VisitasDomiciliarias\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

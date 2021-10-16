@@ -31,13 +31,22 @@ namespace MascotaFeliz.App.Persistencia.AppRepositories
         public VisitaDomiciliaria AddVisitaDomiciliaria(VisitaDomiciliaria pVisitaDomiciliaria)
         {
             pVisitaDomiciliaria.Id = visitasDomiciliarias.Max(r => r.Id) + 1;
+            Dueño dueño = new Dueño { Direccion = "Cra 33A#26a-12", Ciudad = "Bogotá", Pais = "Colombia" };
+            Veterinario veterinario = new Veterinario { TarjetaProfesional = "ULALA", CodigoProfesional = 12345 };
+            Mascota mascota1 = new Mascota { id = 1, Nombre = "Manotas", Edad = 12, Tipo = "Perro", Raza = "Pastor Aleman", Color = "Negro", Dueño = dueño };
+            Mascota mascota2 = new Mascota { id = 2, Nombre = "Phoenix", Edad = 3, Tipo = "Gato", Raza = "Criollo", Color = "Gris", Dueño = dueño };
+            pVisitaDomiciliaria.Encargado=veterinario;
+            pVisitaDomiciliaria.Paciente=mascota1;
             visitasDomiciliarias.Add(pVisitaDomiciliaria);
             return pVisitaDomiciliaria;
         }
 
         public void DeleteVisitaDomiciliaria(int pId)
         {
-            throw new NotImplementedException();
+            var visitaDomiciliariaEncontrada = visitasDomiciliarias.FirstOrDefault(vd => vd.Id == pId);
+            if (visitaDomiciliariaEncontrada == null)
+                return;
+            visitasDomiciliarias.Remove(visitaDomiciliariaEncontrada);
         }
 
         public IEnumerable<VisitaDomiciliaria> GetAllVisitasDomiciliaras()
@@ -78,8 +87,6 @@ namespace MascotaFeliz.App.Persistencia.AppRepositories
                 saludo.EstadoAnimo = pVisitaDomiciliaria.EstadoAnimo;
                 saludo.Medicinas = pVisitaDomiciliaria.Medicinas;
                 saludo.Remision = pVisitaDomiciliaria.Remision;
-                saludo.Paciente = pVisitaDomiciliaria.Paciente;
-                saludo.Encargado = pVisitaDomiciliaria.Encargado;
             }
             return saludo;
         }

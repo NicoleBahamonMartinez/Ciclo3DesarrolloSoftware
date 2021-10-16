@@ -2,14 +2,27 @@
 @model MascotaFeliz.App.Frontend.Pages.ListModel
 @{
 }
-<h1>Listado de Visitas Domiciliaras</h1>
+
+<style>
+
+.wrapper {
+    text-align: center;
+}
+
+}
+</style>
+<div class="wrapper">
+    <h1>Listado de Visitas Domiciliaras</h1>
+</div>
+
 <form method="get">
     <div class="form-group">
-
+    <div class="wrapper">
         <p>
             Visita Domiciliaria por Medicinas: <input type="text" name="filtroBusqueda" asp-for="FiltroBusqueda" />
             <input type="submit" value="Filtrar" />
         </p>
+    </div>
 </form>
 <table class="table">
     <tr>
@@ -22,7 +35,7 @@
         <td>Estado de Animo</td>
         <td>Medicinas</td>
         <td>Remisión</td>
-        <td>Código Veterinario</td>
+        <td>Código profesional</td>
         <td>Mascota</td>
     </tr>
     @foreach (var saludo in Model.visitaDomiciliarias)
@@ -41,12 +54,17 @@
             <td>@saludo.Paciente.Nombre</td>
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-visitaDomiciliariaId="@saludo.Id">
-                    <i class="fas fa-info-circle fa-lg"></i </a>
+                    <i class="fas fa-info-circle"></i></a>
             </td>
 
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-visitaDomiciliariaId="@saludo.Id">
-                    <i class="fas fa-address-book fa-lg" aria-hidden="true"></i>
+                    <i class="far fa-edit"></i>
+                </a>
+            </td>
+             <td>
+                <a class="btn btn-primary table-btn" asp-page="./Delete" asp-route-visitaDomiciliariaId="@saludo.Id">
+                    <i class="fas fa-trash"></i>
                 </a>
             </td>
 
@@ -56,4 +74,6 @@
     }
 </table>
 
-<a asp-page=".\Edit" class="btn btn-primary">Adicionar Visita Domiciliaria</a>
+<div class="wrapper">
+    <a asp-page=".\Edit" class="btn btn-primary">Adicionar Visita Domiciliaria</a>
+</div>

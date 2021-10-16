@@ -19,11 +19,11 @@ namespace MascotaFeliz.App.Frontend.Pages
         {
             this.repositorioVisitaDomiciliaria = repositorioVisitaDomiciliaria;
         }
-        public IActionResult OnGet(int? saludoId)
+        public IActionResult OnGet(int? visitaDomiciliariaId)
         {
-            if (saludoId.HasValue)
+            if (visitaDomiciliariaId.HasValue)
             {
-                vd = repositorioVisitaDomiciliaria.GetVisitaDomiciliaria(saludoId.Value);
+                vd = repositorioVisitaDomiciliaria.GetVisitaDomiciliaria(visitaDomiciliariaId.Value);
                 Console.WriteLine("Encontro Visita");
             }
             else

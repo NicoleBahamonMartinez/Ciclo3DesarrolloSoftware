@@ -1,8 +1,8 @@
 ﻿@page
-@model MascotaFeliz.App.Frontend.Pages.EditModel
-@{}
-
-<h2>Edición de la Visita Domiciliaria realizada el @Model.visitaDomiciliaria.FechaHoraVisita</h2>
+@model MascotaFeliz.App.Frontend.Pages.DeleteModel
+@{
+}
+<h2>Eliminar la Visita Domiciliaria realizada el @Model.visitaDomiciliaria.FechaHoraVisita</h2>
 <form method="post">
     <input type="hidden" asp-for="visitaDomiciliaria.Id" />
     <div class="form-group">
@@ -45,6 +45,6 @@
         <input asp-for="visitaDomiciliaria.Remision" class="form-control">
         <span class="text-danger" asp-validation-for="visitaDomiciliaria.Remision"></span>
     </div>
-    <button type="submit" class="btn btn-primary">Guardar</button>
+    <button type="submit" class="btn btn-primary">Eliminar</button>
 </form>
 <a asp-page="./List" class="btn-default">Lista de Visitas Domiciliarias </a>

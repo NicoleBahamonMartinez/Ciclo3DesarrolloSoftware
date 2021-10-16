@@ -10,13 +10,13 @@ using MascotaFeliz.App.Dominio;
 
 namespace MascotaFeliz.App.Frontend.Pages
 {
-    public class EditModel : PageModel
+    public class DeleteModel : PageModel
     {
-       private readonly iRepositorioVisitaDomiciliaria repositorioVisitasDomiciliarias;
+        private readonly iRepositorioVisitaDomiciliaria repositorioVisitasDomiciliarias;
         [BindProperty]
         public VisitaDomiciliaria visitaDomiciliaria { get; set; }
 
-        public EditModel(iRepositorioVisitaDomiciliaria repositorioSaludos)
+        public DeleteModel(iRepositorioVisitaDomiciliaria repositorioSaludos)
         {
             this.repositorioVisitasDomiciliarias = repositorioSaludos;
         }
@@ -26,10 +26,6 @@ namespace MascotaFeliz.App.Frontend.Pages
             {
                 visitaDomiciliaria = repositorioVisitasDomiciliarias.GetVisitaDomiciliaria(visitaDomiciliariaId.Value);
                 Console.WriteLine("Encontro Visita");
-            }
-            else
-            {
-                visitaDomiciliaria = new VisitaDomiciliaria();
             }
             if (visitaDomiciliaria == null)
             {
@@ -42,21 +38,19 @@ namespace MascotaFeliz.App.Frontend.Pages
 
         public IActionResult OnPost()
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 return Page();
             }
-            if(visitaDomiciliaria.Id>0)
+            if (visitaDomiciliaria.Id > 0)
             {
-            visitaDomiciliaria = repositorioVisitasDomiciliarias.UpdateVisitaDomiciliaria(visitaDomiciliaria);
-            }
-            else
-            {
-             repositorioVisitasDomiciliarias.AddVisitaDomiciliaria(visitaDomiciliaria);
+                repositorioVisitasDomiciliarias.DeleteVisitaDomiciliaria(visitaDomiciliaria.Id);
             }
             return Page();
         }
 
 
     }
+
 }
+
