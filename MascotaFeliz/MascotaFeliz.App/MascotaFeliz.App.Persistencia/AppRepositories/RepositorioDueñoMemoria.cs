@@ -23,6 +23,7 @@ namespace MascotaFeliz.App.Persistencia.AppRepositories
         public Dueño AddDueño(Dueño pDueño)
         {
             pDueño.Id = dueño.Max(r => r.Id) + 1;
+            dueño.Add(pDueño);
             return pDueño;
         }
 

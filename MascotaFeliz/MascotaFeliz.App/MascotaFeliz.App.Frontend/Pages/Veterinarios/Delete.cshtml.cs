@@ -44,11 +44,8 @@ namespace MascotaFeliz.App.Presentacion.Pages
                 }
                 if (Veterinario.Id>0)
                 {
+                    Console.WriteLine("Entra a eliminar");
                     repositorioVeterinarios.DeleteVeterinario(Veterinario.Id);
-                }
-                else
-                {
-                    repositorioVeterinarios.AddVeterinario(Veterinario);
                 }
                 return Page();
         }

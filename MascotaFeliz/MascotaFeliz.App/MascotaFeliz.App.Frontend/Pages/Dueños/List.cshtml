@@ -5,12 +5,22 @@
 <h1>Aqui vamos a listar los Dueños</h1>
 
 <table class="table">
-
+    <tr>
+        <td>ID</td>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>Dirección</td>
+        <td>País</td>
+    </tr>
+    
     @foreach (var dueño in Model.Dueños)
     {
         <tr>
+            <td>@dueño.Id</td>
             <td>@dueño.Nombres</td>
             <td>@dueño.Apellidos</td>
+            <td>@dueño.Direccion</td>
+            <td>@dueño.Pais</td>
             <td>
                 <a class="btn btn-primary table-btn"asp-page="./Details" asp-route-dueñoId="@dueño.Id">
                     <i class="fas fa-info-circle"></i>

@@ -43,12 +43,14 @@ namespace MascotaFeliz.App.Presentacion.Pages
 
         public IActionResult OnPost()
         {
+            Console.WriteLine(Veterinario.Id);
                 if (!ModelState.IsValid)
                 {
                     return Page();
                 }
                 if (Veterinario.Id>0)
                 {
+                    Console.WriteLine("Entra a Update");
                     Veterinario= repositorioVeterinarios.UpdateVeterinario(Veterinario);
                 }
                 else

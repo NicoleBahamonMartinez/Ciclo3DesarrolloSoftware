@@ -5,12 +5,22 @@
 <h1>Lista de Veterinarios</h1>
 
 <table class="table">
+    <tr>
+        <td>ID</td>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>Tarjeta Profesional</td>
+        <td>Código profesional</td>
+    </tr>
     
     @foreach (var veterinario in Model.Veterinarios)
     {
         <tr>
+            <td>@veterinario.Id</td>
             <td>@veterinario.Nombres</td>
             <td>@veterinario.Apellidos</td>
+            <td>@veterinario.TarjetaProfesional</td>
+            <td>@veterinario.CodigoProfesional</td>
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-veterinarioId="@veterinario.Id">
                     <i class="fas fa-info-circle"></i>

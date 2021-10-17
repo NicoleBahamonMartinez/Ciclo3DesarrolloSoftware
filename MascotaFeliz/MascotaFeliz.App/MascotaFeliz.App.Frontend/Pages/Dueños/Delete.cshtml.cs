@@ -46,10 +46,6 @@ namespace MascotaFeliz.App.Presentacion.Pages
             {
                 repositorioDueños.DeleteDueño(Dueño.Id);                
             }
-            else
-            {
-                repositorioDueños.AddDueño(Dueño);
-            }
             return Page();
         }
       
