@@ -19,8 +19,6 @@ namespace MascotaFeliz.App.Persistencia.AppRepositories
         public Mascota AddMascota(Mascota nuevaMascota)
         {
             nuevaMascota.id = mascotas.Max(r => r.id) + 1;
-            Dueño dueño = new Dueño { Direccion = "Cra 33A#26a-12", Ciudad = "Bogotá", Pais = "Colombia" };
-            nuevaMascota.Dueño=dueño;
             mascotas.Add(nuevaMascota);
             return nuevaMascota;
         }
@@ -64,6 +62,7 @@ namespace MascotaFeliz.App.Persistencia.AppRepositories
                 mascota.Nombre=mascotaActualizada.Nombre;
                 mascota.Raza=mascotaActualizada.Raza;
                 mascota.Tipo=mascotaActualizada.Tipo;
+                mascota.Dueño=mascotaActualizada.Dueño;
             }
             return mascota;
         }

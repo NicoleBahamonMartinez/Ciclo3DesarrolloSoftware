@@ -46,11 +46,14 @@ namespace MascotaFeliz.App.Frontend.Pages
             }
             if(Mascota.id>0)
             {
+            Mascota.Dueño=new Dueño{Nombres=Request.Form["Mascota.Dueño.Nombres"]};
             Mascota = repositorioMascotaDataBase.Update(Mascota);
             }
             else
             {
-             repositorioMascotaDataBase.AddMascota(Mascota);
+                Mascota.Dueño=new Dueño{Nombres=Request.Form["Mascota.Dueño.Nombres"]};
+                Console.WriteLine("Crea dueño");
+                repositorioMascotaDataBase.AddMascota(Mascota);
             }
             return Page();
         }
