@@ -25,6 +25,7 @@ namespace MascotaFeliz.App.Frontend
             services.AddSingleton<iRepositorioVisitaDomiciliaria, RepositorioVisitaDomiciliariaMemoria>();
             services.AddSingleton<IRepositorioDueño,RepositorioDueñoMemoria>();
             services.AddSingleton<IRepositorioVeterinario,RepositorioVeterinarioMemoria>();
+            services.AddSingleton<IRepositorioMascota,RepositorioMascotaMemoria>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

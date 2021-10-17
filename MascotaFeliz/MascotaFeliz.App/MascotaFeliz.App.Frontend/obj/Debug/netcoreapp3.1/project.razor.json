@@ -14442,6 +14442,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\MascotasLista\\editarMascota.cshtml",
+      "TargetPath": "Pages\\MascotasLista\\editarMascota.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\Dueños\\List.cshtml",
       "TargetPath": "Pages\\Dueños\\List.cshtml",
       "FileKind": "mvc"
@@ -14459,6 +14464,16 @@
     {
       "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\VisitasDomiciliarias\\Details.cshtml",
       "TargetPath": "Pages\\VisitasDomiciliarias\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\MascotasLista\\MascotaLista.cshtml",
+      "TargetPath": "Pages\\MascotasLista\\MascotaLista.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\nicki\\Desktop\\MISIONTIC\\Ciclo 3\\Desarrollo de Software\\Ciclo3DesarrolloSoftware\\MascotaFeliz\\MascotaFeliz.App\\MascotaFeliz.App.Frontend\\Pages\\MascotasLista\\DetailMascota.cshtml",
+      "TargetPath": "Pages\\MascotasLista\\DetailMascota.cshtml",
       "FileKind": "mvc"
     },
     {

@@ -1,0 +1,55 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.ListModelMascota
+@{
+}
+
+
+<h1>Listado de Mascotas </h1>
+<form method="get">
+    <div class="form-group">
+
+        <p>
+            Mascota: <input type="text" name="filtroBusqueda" asp-for="FiltroBusqueda" />
+            <input type="submit" value="Filtrar" />
+        </p>
+</form>
+<table class="table">
+    <tr>
+        <td>ID</td>
+        <td>Nombre</td>
+        <td>Edad</td>
+        <td>Tipo</td>
+        <td>Raza</td>
+        <td>Color</td>
+        <td>Dueño</td>
+    </tr>
+    @foreach (var mascota in Model.Mascota)
+    {
+        <tr>
+            
+            
+            <td>@mascota.id</td>
+            <td>@mascota.Nombre</td>
+            <td>@mascota.Edad</td>
+            <td>@mascota.Tipo</td>
+            <td>@mascota.Raza</td>
+            <td>@mascota.Color</td>
+            <td>@mascota.Dueño.Nombres @mascota.Dueño.Apellidos</td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./DetailMascota" asp-route-mascotaId="@mascota.id">
+                    <i class="fas fa-info-circle"></i></a>
+            </td>
+
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./editarMascota" asp-route-mascotaid="@mascota.id">
+                    <i class="far fa-edit"></i>
+                </a>
+            </td>
+
+
+
+        </tr>
+    }
+</table>
+
+<a asp-page=".\editarMascota" class="btn btn-primary">Adicionar Mascota</a>
