@@ -1,34 +1,57 @@
+using System;
 using System.Collections.Generic;
-using MascotaFeliz.App.Dominio;
 using System.Linq;
+using MascotaFeliz.App.Dominio;
 
 namespace MascotaFeliz.App.Persistencia.AppRepositories
 {
-    public class RepositorioDueño : iRepositorioDueño
-    {
-        public Dueño AddDueño(Dueño dueño)
+    public class RepositorioDueño:IRepositorioDueño
+    { 
+        private readonly AppContext _appContext;
+        
+        public RepositorioDueño(AppContext appContext)
         {
-            throw new System.NotImplementedException();
+            _appContext = appContext;
+        }
+        
+        Dueño IRepositorioDueño.AddDueño(Dueño dueño)
+        {
+            var dueñoAdicionado = _appContext.Dueños.Add(dueño);
+            _appContext.SaveChanges();
+            return dueñoAdicionado.Entity;
         }
 
-        public void deleteDueño(int idDueño)
+        Dueño IRepositorioDueño.UpdateDueño(Dueño dueño)
         {
-            throw new System.NotImplementedException();
-        }
+            var dueñoEncontrado = _appContext.Dueños.FirstOrDefault(c => c.Id == dueño.Id);
+            if (dueñoEncontrado != null)
+                {
+                    dueñoEncontrado.TipoId=dueño.TipoId;
+                    dueñoEncontrado.Nombres=dueño.Nombres;
+                    dueñoEncontrado.Apellidos=dueño.Apellidos;
+                    dueñoEncontrado.NumeroTelefono=dueño.NumeroTelefono;
 
-        public IEnumerable<Dueño> GetAllDueño()
-        {
-            throw new System.NotImplementedException();
+                    _appContext.SaveChanges();
+                }
+                return dueñoEncontrado;
         }
-
-        public Dueño GetDueño(int idDueño)
+        void IRepositorioDueño.DeleteDueño(int idDueño)
         {
-            throw new System.NotImplementedException();
+            var dueñoEncontrado = _appContext.Dueños.FirstOrDefault(c => c.Id == idDueño);
+            if (dueñoEncontrado == null)
+                return;
+            _appContext.Dueños.Remove(dueñoEncontrado);
+            _appContext.SaveChanges();
         }
-
-        public Dueño UpdateDueño(Dueño dueño)
+        Dueño IRepositorioDueño.GetDueño(int TipoId)
         {
-            throw new System.NotImplementedException();
+            return _appContext.Dueños.FirstOrDefault(c => c.Id == TipoId);
+        } 
+
+        IEnumerable<Dueño> IRepositorioDueño.GetAllDueños()
+        {
+            return _appContext.Dueños;
         }
     }
 }
+

@@ -1,7 +1,7 @@
 using System;
 namespace MascotaFeliz.App.Dominio
 {
-    public class Dueño: Usuario
+    public class Dueño: Persona
     {
         public string Direccion {get;set;}
         public string Ciudad {get;set;}

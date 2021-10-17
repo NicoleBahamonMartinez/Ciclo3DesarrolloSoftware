@@ -23,6 +23,8 @@ namespace MascotaFeliz.App.Frontend
             services.AddRazorPages();
             // services.AddSingleton<iRepositorioVisitaDomiciliaria, RepositorioVisitaDomiciliaria>();
             services.AddSingleton<iRepositorioVisitaDomiciliaria, RepositorioVisitaDomiciliariaMemoria>();
+            services.AddSingleton<IRepositorioDueño,RepositorioDueñoMemoria>();
+            services.AddSingleton<IRepositorioVeterinario,RepositorioVeterinarioMemoria>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

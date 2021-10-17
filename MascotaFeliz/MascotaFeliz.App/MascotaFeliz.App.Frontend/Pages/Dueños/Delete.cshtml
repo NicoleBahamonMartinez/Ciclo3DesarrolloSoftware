@@ -1,0 +1,62 @@
+﻿@page
+@model MascotaFeliz.App.Presentacion.Pages.DeleteModelDueño
+@{
+}
+<h2>Borrado de dueños</h2>
+<form method="post">
+    <input type="hidden" asp-for="Dueño.TipoId"/>
+    <div class="form-group">
+    <label asp-for="Dueño.TipoId"></label>
+    <input asp-for="Dueño.TipoId" class="form-control">
+    <span class="text-danger" asp-validation-for="Dueño.TipoId"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Dueño.TipoId"></label>
+    <input asp-for="Dueño.TipoId" class="form-control">
+    <span class="text-danger" asp-validation-for="Dueño.TipoId"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Dueño.Nombres"></label>
+    <input asp-for="Dueño.Nombres" class="form-control">
+    <span class="text-danger" asp-validation-for="Dueño.Nombres"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Dueño.Apellidos"></label>
+    <input asp-for="Dueño.Apellidos" class="form-control">
+    <span class="text-danger" asp-validation-for="Dueño.Apellidos"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Dueño.NumeroTelefono"></label>
+    <input asp-for="Dueño.NumeroTelefono" class="form-control">
+    <span class="text-danger" asp-validation-for="Dueño.NumeroTelefono"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Dueño.Correo"></label>
+    <input asp-for="Dueño.Correo" class="form-control">
+    <span class="text-danger" asp-validation-for="Dueño.Correo"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Dueño.Genero"></label>
+    <input asp-for="Dueño.Genero" class="form-control">
+    <span class="text-danger" asp-validation-for="Dueño.Genero"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Dueño.Direccion"></label>
+    <input asp-for="Dueño.Direccion" class="form-control">
+    <span class="text-danger" asp-validation-for="Dueño.Direccion"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Dueño.Ciudad"></label>
+    <input asp-for="Dueño.Ciudad" class="form-control">
+    <span class="text-danger" asp-validation-for="Dueño.Ciudad"></span>
+</div>
+<div class="form-group">
+    <label asp-for="Dueño.Pais"></label>
+    <input asp-for="Dueño.Pais" class="form-control">
+    <span class="text-danger" asp-validation-for="Dueño.Pais"></span>
+</div>
+
+
+<button type="submit" class="btn btn-primary">Borrar</button>
+</form>
+<a asp-page="./List" class="btn-default">Volver a la lista de dueños</a>

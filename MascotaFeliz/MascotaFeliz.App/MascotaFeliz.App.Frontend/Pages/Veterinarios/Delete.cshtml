@@ -1,0 +1,52 @@
+﻿@page
+@model MascotaFeliz.App.Presentacion.Pages.DeleteModelVeterinario
+@{
+}
+<h2>Borrado del Veterinario</h2>
+<form method="post">
+    <input type="hidden" asp-for="Veterinario.TipoId"/>
+    <div class="form-group">
+        <label asp-for="Veterinario.TipoId"></label>
+        <input asp-for="Veterinario.TipoId" class="form-control">
+        <span class="text-danger" asp-validation-for="Veterinario.TipoId"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Veterinario.Nombres"></label>
+        <input asp-for="Veterinario.Nombres" class="form-control">
+        <span class="text-danger" asp-validation-for="Veterinario.Nombres"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Veterinario.Apellidos"></label>
+        <input asp-for="Veterinario.Apellidos" class="form-control">
+        <span class="text-danger" asp-validation-for="Veterinario.Apellidos"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Veterinario.NumeroTelefono"></label>
+        <input asp-for="Veterinario.NumeroTelefono" class="form-control">
+        <span class="text-danger" asp-validation-for="Veterinario.NumeroTelefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Veterinario.Correo"></label>
+        <input asp-for="Veterinario.Correo" class="form-control">
+        <span class="text-danger" asp-validation-for="Veterinario.Correo"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Veterinario.Genero"></label>
+        <input asp-for="Veterinario.Genero" class="form-control">
+        <span class="text-danger" asp-validation-for="Veterinario.Genero"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Veterinario.TarjetaProfesional"></label>
+        <input asp-for="Veterinario.TarjetaProfesional" class="form-control">
+        <span class="text-danger" asp-validation-for="Veterinario.TarjetaProfesional"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Veterinario.CodigoProfesional"></label>
+        <input asp-for="Veterinario.CodigoProfesional" class="form-control">
+        <span class="text-danger" asp-validation-for="Veterinario.CodigoProfesional"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Borrar</button>
+    
+
+</form>
+<a asp-page="./List" class="btn-default">Volver a la lista de veterinarios</a>

@@ -1,5 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+<style>
+
+.wrapper {
+    text-align: center;
+}
+
+}
+</style>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,7 +37,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Dueños/List">Dueños</a>
                         </li>
                          <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Veterinario</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Veterinarios/List">Veterinario</a>
                         </li>
                          <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/VisitasDomiciliarias/List">Visitas domiciliarias</a>
@@ -39,6 +47,15 @@
             </div>
         </nav>
     </header>
+    <table class=table>
+        <tr>
+            <td></td>
+            <td><img src="https://cdn-icons-png.flaticon.com/512/1998/1998627.png" alt="Italian Trulli" width="250" height="250"></td>
+            <td><img src="https://cdn-icons-png.flaticon.com/512/3304/3304567.png" alt="Italian Trulli" width="250" height="250"></td>
+            <td><img src="https://cdn-icons-png.flaticon.com/512/1998/1998592.png" alt="Italian Trulli" width="250" height="250"></td>
+        </tr>
+    </table>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()

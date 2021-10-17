@@ -1,5 +1,34 @@
 ﻿@page
-@model MascotaFeliz.App.Frontend.Pages.ListModelDueños
+@model MascotaFeliz.App.Presentacion.Pages.ListModelDueño
 @{
 }
-<h1>Acá va lo de Olga</h1>
+<h1>Aqui vamos a listar los Dueños</h1>
+
+<table class="table">
+
+    @foreach (var dueño in Model.Dueños)
+    {
+        <tr>
+            <td>@dueño.Nombres</td>
+            <td>@dueño.Apellidos</td>
+            <td>
+                <a class="btn btn-primary table-btn"asp-page="./Details" asp-route-dueñoId="@dueño.Id">
+                    <i class="fas fa-info-circle"></i>
+                </a>         
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-dueñoId="@dueño.Id">
+                    <i class="far fa-edit"></i>
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Delete" asp-route-dueñoId="@dueño.Id">
+                    <i class="fas fa-trash"></i>
+                </a>
+            </td>
+
+        </tr>
+    }
+</table>
+<a asp-page=".\Edit" class="btn btn-primary">Adicionar un Dueño</a>
+
